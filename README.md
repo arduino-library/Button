@@ -1,6 +1,6 @@
 # Button
 
-This library implements the logic of push button control. This library is being used in the DCF77 Nixie Clock and the Magnetic Loop Antenna projects. 
+This library implements the logic of push button control. 
 
 Main features:
 
