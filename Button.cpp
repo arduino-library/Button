@@ -1,15 +1,16 @@
-/* 
+/*
  * Push button control
  *
  * This source file can be found under:
- * http://www.github.com/microfarad-de/Button
- * 
+ * http://www.github.com/arduino-library/Button
+ *
  * Please visit:
  *   http://www.microfarad.de
  *   http://www.github.com/microfarad-de
- * 
+ *   http://www.github.com/arduino-library
+ *
  * Copyright (C) 2019 Karim Hraibi (khraibi at gmail.com)
- * 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -21,7 +22,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "Button.h"
@@ -58,7 +59,7 @@ bool ButtonClass::falling (void) {
     wasPressed = pressed;
     rv = true;
   }
-  return rv;  
+  return rv;
 }
 
 bool ButtonClass::fallingLongPress (void) {
@@ -68,11 +69,11 @@ bool ButtonClass::fallingLongPress (void) {
     wasLongPressed = false;
     rv = true;
   }
-  return rv;  
+  return rv;
 }
 
 bool ButtonClass::fallingContinuous (void) {
-  return !pressed && wasPressed; 
+  return !pressed && wasPressed;
 }
 
 bool ButtonClass::longPress (void) {
